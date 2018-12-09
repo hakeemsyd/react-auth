@@ -68,10 +68,18 @@ class LoginForm extends Component {
         <CardSection>
          {this.renderButton()}
         </CardSection>
-        <Text>{error}</Text>
+        <Text style={styles.errorTextStyle}>{error}</Text>
       </Card>
     );
   }
 }
+
+const styles = {
+  errorTextStyle: {
+    fontSize: 20,
+    alignSelf: 'center',
+    color: 'red'
+  }
+};
 
 export default LoginForm;
